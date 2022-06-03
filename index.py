@@ -1,5 +1,4 @@
-from flask import Flask, session, request, jsonify
-from flask_session import Session
+from flask import Flask, request, jsonify
 import json
 from lphandler import *
 
@@ -25,7 +24,6 @@ def postdata():
 
 if __name__ == '__main__':
     app.secret_key = 'AMkhPWeCFcHT57zf%$j^t&x^ENj8W6Bi'
-    app.config['SESSION_TYPE'] = 'filesystem'
 
     sess.init_app(app)
 
