@@ -4,7 +4,9 @@ from lphandler import *
 
 
 app = Flask(__name__)
+sess = Session()
 app.config.from_object(__name__)
+Session(app)
 LpObject = LpObject()
 input_data = ''
 
