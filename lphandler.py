@@ -55,7 +55,7 @@ class LpObject:
 
     #vraci json soubor reseni a restartuje resitel problemu LP
     def getSolution(self):
-        response = "{\"ingredients\"": {"
+        response = "{\"ingredients\": {"
         for ingredient in self.ingredientsList:
             response += '\"{}\":{},'.format(ingredient.name, ingredient.varValue)
         response = response[:-1]
